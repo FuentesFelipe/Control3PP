@@ -28,10 +28,16 @@ int main(int argc, char** argv) {
               std::ofstream salida(archivo_salida);
               std::string linea;
 
+<<<<<<< HEAD
               while (std::getline(entrada, linea)) {
                 // Procesador maestro
                 if(procesador == 0){
                     MPI_Status status;
+=======
+    if (argc > 4) {
+        std::string archivo_entrada(obtener_entrada(argv, argc));
+        std::string archivo_salida(obtener_salida(argv, argc));
+>>>>>>> 11ff6b92bbe5023c52b4fd686628d1b11c0b8e31
 
                   for(int fuente = 1; fuente < tamano; fuente++){
                       std::string linea;

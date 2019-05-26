@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
     // Finalize the MPI environment.
     MPI_Finalize();
 
-    if (argc > 4)
+    if (argc > 4) {
         std::string archivo_entrada(obtener_entrada(argv, argc));
         std::string archivo_salida(obtener_salida(argv, argc));
 
